@@ -1,0 +1,28 @@
+@import 'variables';
+
+.header {
+    background-color: $azul;
+
+    .contenido-h {
+        padding: 2%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        color: white;
+    }
+ 
+}
+
+.navegacion a {
+ 
+    color: white;
+    &:hover {
+        color:$rosa_claro ;
+    }
+    
+}
+
+

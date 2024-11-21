@@ -1,0 +1,57 @@
+.header {
+  background-color: #858FB3;
+}
+.header .contenido-h {
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  color: white;
+}
+
+.navegacion a {
+  color: white;
+}
+.navegacion a:hover {
+  color: #ECBAC3;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: "Roboto Mono", serif;
+  font-style: normal;
+  color: "#000000";
+}
+
+p {
+  color: "#000000";
+  line-height: 1.5;
+}
+
+.contenedor {
+  width: 95%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+/*# sourceMappingURL=estilos.css.map */

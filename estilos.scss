@@ -1,0 +1,42 @@
+@import 'variables';
+
+@import 'header' ;
+
+
+*{
+margin: 0%;
+padding: 0%;
+}
+
+body {
+    font-family: $fuente_uno;
+    font-style: normal;
+    color: $negro;
+}
+
+p {
+    color:$negro;
+    line-height: 1.5;
+}
+
+.contenedor {
+    width: 95%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1 {
+
+    font-weight:900;
+
+}
