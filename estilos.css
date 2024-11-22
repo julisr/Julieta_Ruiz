@@ -7,26 +7,41 @@
   justify-content: space-between;
   align-items: center;
 }
-.header h1 {
-  color: white;
+.header .contenido-h h1 {
+  text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
 }
 
-.navegacion a {
+.navegacion a, h1 {
   color: white;
 }
-.navegacion a:hover {
+.navegacion a:hover, h1:hover {
   color: #ECBAC3;
 }
 
 .imagen img {
-  filter: brightness(0.5);
-  height: 85%;
+  filter: brightness(1%);
+  height: 80%;
 }
 
 .contenido-i {
   position: relative;
 }
 
+.contenido-i img {
+  animation-name: colores;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  z-index: 0;
+}
+
+@keyframes colores {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(50deg);
+  }
+}
 .texto {
   position: absolute;
   top: 50%;
@@ -34,14 +49,23 @@
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
+  scale: 1;
 }
 .texto h2 {
   font-weight: 700;
   font-size: 50px;
+  text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
 }
 .texto p {
   font-size: 25px;
   background-color: #EA7095;
+}
+
+.texto:hover {
+  scale: 1.15;
+}
+.texto:hover p {
+  background-color: #ECBAC3;
 }
 
 @media (max-width: 480px) {
@@ -59,6 +83,11 @@
 .contenedor-info .imagen-info {
   padding: 5%;
   align-items: center;
+  scale: 1;
+}
+
+.imagen-info:hover {
+  scale: 1.15;
 }
 
 .texto-info {
@@ -78,9 +107,87 @@
     align-items: center;
   }
 }
+.artistas {
+  background-color: #ECBAC3;
+}
+.artistas h3 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.artistas .dia {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 2%;
+}
+
+.contenedor-artistas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+}
+
+.escenario {
+  padding-top: 2%;
+  font-family: "Roboto Mono", serif;
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  scale: 1;
+}
+.escenario:hover {
+  scale: 1.15;
+}
+
+.nombre-escenario {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.horarios {
+  list-style: none;
+}
+.horarios li {
+  padding-bottom: 20px;
+  font-weight: 700;
+}
+.horarios li span {
+  font-weight: 400;
+}
+
+.amarillo {
+  background-color: #FFE797;
+}
+.amarillo li:nth-child(odd) {
+  background-color: rgb(255, 225.1153846154, 125.5);
+}
+
+.beige {
+  background-color: #CDD1DC;
+}
+.beige li:nth-child(odd) {
+  background-color: rgb(190, 195.2, 209.5);
+}
+
+@media (max-width: 480px) {
+  .contenedor-artistas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor-artistas .escenario {
+    width: 80%;
+  }
+}
 * {
   margin: 0%;
   padding: 0%;
+  scroll-behavior: smooth;
 }
 
 body {

@@ -9,15 +9,21 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        h1 {
+            text-shadow: 2px 2px 0 black,  
+            -2px 2px 0 black, 
+            2px -2px 0 black, 
+            -2px -2px 0 black; 
+        }
     }
 
-    h1 {
-        color: white;
-    }
+   
+    
  
 }
 
-.navegacion a {
+.navegacion a, h1 {
  
     color: white;
     &:hover {
@@ -26,11 +32,13 @@
     
 }
 
+
+
 .imagen {
 
     img {
-        filter: brightness(0.5); 
-        height: 85%;
+        filter: brightness(1%); 
+        height: 80%;
       }
 }
 
@@ -38,6 +46,25 @@
     position: relative;
 }
 
+.contenido-i img {
+    animation-name: colores;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    z-index: 0;
+}
+
+@keyframes colores {
+
+    0%, 100% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(50deg);
+    }
+
+
+}
 
 .texto {
     position: absolute;  
@@ -46,10 +73,16 @@
     transform: translate(-50%, -50%); 
     color: white;       
     text-align: center;  
+    scale:1;
 
     h2 {
         font-weight: 700;
         font-size: 50px;
+         text-shadow: 2px 2px 0 black,  
+            -2px 2px 0 black, 
+            2px -2px 0 black, 
+            -2px -2px 0 black; 
+    
     }
 
     p {
@@ -58,7 +91,15 @@
     }
 }
 
+.texto:hover
+{
+    scale: 1.15;
 
+    p {
+        background-color: $rosa_claro;
+    }
+
+}
 
    
 
