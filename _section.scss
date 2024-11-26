@@ -128,11 +128,7 @@
  
   @media (max-width: 480px) {
 
-    .artistas { 
-
-      padding-bottom: 3%;
-        padding-top: 15px;
-
+    
 
 
     .contenedor-artistas{
@@ -146,7 +142,7 @@
     }
     }  
 
-  }
+  
   }
 
 
@@ -241,4 +237,31 @@
       }
 
     }
+  }
+
+
+  @media (max-width: 480px) {
+
+    .entrada {
+
+      display: flex;
+      flex-direction: column;
+
+      .pase-preventa {
+
+        p {
+
+
+          width: 100%;
+
+
+        }
+
+        
+
+
+      }
+
+    }
+
   }
