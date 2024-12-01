@@ -61,7 +61,7 @@
   background-color: #EA7095;
 }
 
-.texto:hover {
+.texto:hover h2 {
   scale: 1.15;
 }
 .texto:hover p {
@@ -73,7 +73,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: black;
+  }
+  .navegacion {
+    padding: 15px;
   }
 }
 .contenedor-info {
@@ -105,6 +107,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
+  }
+  .texto-info h2, .texto-info .p-info {
+    text-align: center;
   }
 }
 .artistas {
@@ -180,9 +186,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 25px;
   }
-  .contenedor-artistas .escenario {
+  .escenario {
     width: 80%;
+  }
+  .beige, .amarillo {
+    margin-top: 15px;
   }
 }
 .contenedor-entradas {
@@ -244,9 +254,13 @@
   .entrada {
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
   }
   .entrada .pase-preventa p {
     width: 100%;
+  }
+  .pase-nombre {
+    margin-top: 15px;
   }
 }
 .footer {

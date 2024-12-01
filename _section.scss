@@ -37,26 +37,30 @@
 
 
 @media (max-width: 480px) {
+  .contenedor-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  }  
 
-    .contenedor-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .texto-info  {
+    h2, .p-info {
+      text-align: center;
+    }   
+  } 
+}
 
-    }  
-  }
 
   .artistas {
     background-color: $rosa_claro;
-    
-    
+     
 
     h3 {
         color: white;
         text-align: center;
         font-size: 50px;
-        text-transform: uppercase;
-        
+        text-transform: uppercase;   
     }
 
     .dia {
@@ -66,10 +70,7 @@
         padding-bottom: 3%;
         padding-top: 15px;
     }
-
-
   }
-
   .contenedor-artistas {
     display: flex;
     justify-content: center;
@@ -128,34 +129,25 @@
  
   @media (max-width: 480px) {
 
-    
-
-
     .contenedor-artistas{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding-bottom: 25px;
+  }
     .escenario {
         width: 80%;
-       
     }
-    }  
 
-  
+    .beige, .amarillo {
+      margin-top: 15px;
+    }
   }
 
 
   .contenedor-entradas {
 
     background-color: $azul;
-
-    
-
-    
-
-    
-
 
     h3 {
 
@@ -167,14 +159,11 @@
     }
   }
 
-
   .entrada {
 
     display: flex;
     justify-content:center;
     gap: 25%;
-    
-
 
      }
 
@@ -184,22 +173,17 @@
 
     &:hover {
       scale: 1.25;
-
-
     }
 
-    
-
     .pase-nombre {
-
       font-size: 25px;
       font-weight: 700;
       text-align: center;
       color: white;
       padding-bottom: 10px;
     }
-    .pase-preventa {
 
+    .pase-preventa {
       p {
 
         color: white;
@@ -210,7 +194,6 @@
         width: 200px;
         font-weight: 700;
       text-transform: uppercase;
-
       }
     }
 
@@ -219,7 +202,6 @@
       background-color: white;
       padding: 30px;
       
-
       p {
 
         font-size: 20px;
@@ -232,36 +214,26 @@
         &:hover {
           background-color: $rosa;
         }
-
-
       }
 
     }
   }
 
-
   @media (max-width: 480px) {
 
     .entrada {
-
       display: flex;
       flex-direction: column;
+      padding-bottom: 20px;
 
       .pase-preventa {
-
         p {
-
-
           width: 100%;
-
-
         }
-
-        
-
-
       }
-
     }
-
+    .pase-nombre {
+      margin-top: 15px;
+      
+    }
   }
